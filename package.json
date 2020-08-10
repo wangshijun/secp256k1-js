@@ -1,5 +1,8 @@
 {
-  "name": "secp256k1-js",
+  "name": "@wangshijun/secp256k1-js",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "4.0.2",
   "description": "This module provides js implementation to ecdsa secp256k1 functions",
   "keywords": [
