@@ -6,15 +6,6 @@
 prebuildify = ./node_modules/.bin/prebuildify
 prebuildify-cross = ./node_modules/.bin/prebuildify-cross
 
-# hack, otherwise GitHub Actions for Windows:
-#  '.' is not recognized as an internal or external command, operable program or batch file.
-build-addon:
-	$(prebuildify) --target node@10.0.0 --napi --strip && node -p "process.platform"
-
-build-addon-linux:
-	$(prebuildify-cross) -i centos7-devtoolset7 -i alpine --target node@10.0.0 --napi --strip
-
-
 nyc = ./node_modules/.bin/nyc
 
 coverage:
@@ -60,8 +51,6 @@ package_include_dirs = \
 	src
 package_include_files = \
 	API.md \
-	binding.gyp \
-	bindings.js \
 	elliptic.js \
 	index.js \
 	LICENSE \

@@ -1,7 +1,7 @@
 {
-  "name": "secp256k1",
+  "name": "secp256k1-js",
   "version": "4.0.2",
-  "description": "This module provides native bindings to ecdsa secp256k1 functions",
+  "description": "This module provides js implementation to ecdsa secp256k1 functions",
   "keywords": [
     "ec",
     "ecdh",
@@ -28,19 +28,12 @@
   "browser": {
     "./index.js": "./elliptic.js"
   },
-  "scripts": {
-    "install": "node-gyp-build || exit 0"
-  },
+  "scripts": {},
   "dependencies": {
-    "elliptic": "^6.5.2",
-    "node-addon-api": "^2.0.0",
-    "node-gyp-build": "^4.2.0"
+    "elliptic": "^6.5.2"
   },
   "devDependencies": {
-    "node-gyp": "^5.0.7",
     "nyc": "^15.0.0",
-    "prebuildify": "^3.0.4",
-    "prebuildify-cross": "github:prebuild/prebuildify-cross#v4.0.0",
     "standard": "^14.3.1",
     "tap-dot": "^2.0.0",
     "tape": "^4.10.1",
@@ -49,6 +42,5 @@
   },
   "engines": {
     "node": ">=10.0.0"
-  },
-  "gypfile": true
+  }
 }
