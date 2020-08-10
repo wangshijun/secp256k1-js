@@ -1,5 +1,5 @@
 {
-  "name": "@wangshijun/secp256k1-js",
+  "name": "@wangshijun/secp256k1",
   "publishConfig": {
     "access": "public"
   },

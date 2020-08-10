@@ -1,10 +1,10 @@
-# secp256k1-js
+# @wangshijun/secp256k1
 
 This module provides pure javascript implementation of secp256k1, [elliptic](https://github.com/indutny/elliptic) is used behind the scene
 
 ## Installation
 
-`npm install secp256k1-js`
+`npm install @wangshijun/secp256k1`
 
 ## Usage
 
@@ -14,7 +14,7 @@ This module provides pure javascript implementation of secp256k1, [elliptic](htt
 
 ```js
 const { randomBytes } = require('crypto');
-const secp256k1 = require('secp256k1');
+const secp256k1 = require('@wangshijun/secp256k1');
 
 // generate message to sign
 // message should have 32-byte length, if you have some other length you can hash message
@@ -44,7 +44,7 @@ console.log(secp256k1.ecdsaVerify(sigObj.signature, msg, pubKey));
 
 ```js
 const { randomBytes } = require('crypto');
-const secp256k1 = require('./');
+const secp256k1 = require('@wangshijun/secp256k1');
 
 // generate privKey
 function getPrivateKey() {
